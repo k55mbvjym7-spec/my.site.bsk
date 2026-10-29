@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Портфолио начинающего веб-разработчика">
+    <title>Буйских Владислава — веб-разработчик</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ШАПКА -->
+    <header>
+        <nav>
+            <a href="#about">Обо мне</a>
+            <a href="#skills">Навыки</a>
+            <a href="#projects">Проекты</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+        <h1>Буйских Владислава</h1>
+        <p>Начинающий веб-разработчик</p>
+    </header>
+
+    <main>
+        <!-- ОБО МНЕ -->
+        <section id="about">
+            <img src="avatar/avatar.svg" alt="Фото Буйских Владиславы" width="160" height="160">
+            <div>
+                <h2>Обо мне</h2>
+                <p>Привет! Я изучаю <strong>веб-разработку</strong> и создаю сайты
+                   на <em>HTML и CSS</em>. Это мой первый проект, сделанный с нуля.</p>
+            </div>
+        </section>
+
+        <!-- НАВЫКИ -->
+        <section id="skills">
+            <h2>Навыки</h2>
+            <ul>
+                <li>HTML5 — семантическая вёрстка</li>
+                <li>CSS3 — flexbox, grid, адаптивность</li>
+                <li>Основы JavaScript</li>
+                <li>Git и публикация сайтов</li>
+            </ul>
+        </section>
+
+        <!-- ПРОЕКТЫ -->
+        <section id="projects">
+            <h2>Мои проекты</h2>
+            <article>
+                <h3>☕ Сайт кофейни</h3>
+                <p>Лендинг с меню, фотогалереей и формой бронирования столика.</p>
+                <a href="#">Смотреть проект →</a>
+            </article>
+            <article>
+                <h3>✈️ Блог о путешествиях</h3>
+                <p>Многостраничный сайт с картой поездок и галереей фотографий.</p>
+                <a href="#">Смотреть проект →</a>
+            </article>
+            <article>
+                <h3>📚 Список книг</h3>
+                <p>Интерактивный список прочитанного с поиском и фильтрами.</p>
+                <a href="#">Смотреть проект →</a>
+            </article>
+        </section>
+
+        <!-- КОНТАКТЫ -->
+        <section id="contacts">
+            <h2>Связаться со мной</h2>
+            <form action="#" method="POST">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Как вас зовут?" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="you@mail.ru" required>
+
+                <label for="msg">Сообщение</label>
+                <textarea id="msg" name="message" rows="4" placeholder="Ваше сообщение..." required></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer>
+        <p>© 2026 Буйских Владислава.</p>
+    </footer>
+<button id="speak-button" type="button"></button>
+<button id="stop-button" type="button"></button>
+<script src="accessibility.js"></script>
+</body>
+</html>
