@@ -282,19 +282,12 @@ footer {
     outline-offset: 3px;
 }
 .scroll-down {
-    display: block;
-    width: fit-content;
-    margin: 30px auto;
-    font-size: 38px;
+    display: inline-block;
+    font-size: 45px;
     color: #2b6cb0;
     text-decoration: none;
-    cursor: pointer;
+    margin-top: 20px;
     animation: arrowDown 1.5s infinite;
-    transition: color 0.3s;
-}
-
-.scroll-down:hover {
-    color: #ffd700;
 }
 
 @keyframes arrowDown {
