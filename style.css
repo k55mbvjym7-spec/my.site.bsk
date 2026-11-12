@@ -281,3 +281,31 @@ footer {
     outline: 3px solid #1677ff;
     outline-offset: 3px;
 }
+.scroll-down {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    font-size: 38px;
+    color: #2b6cb0;
+    text-decoration: none;
+    cursor: pointer;
+    animation: arrowDown 1.5s infinite;
+    transition: color 0.3s;
+}
+
+.scroll-down:hover {
+    color: #ffd700;
+}
+
+@keyframes arrowDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
