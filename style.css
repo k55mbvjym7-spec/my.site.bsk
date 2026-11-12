@@ -282,23 +282,17 @@ footer {
     outline-offset: 3px;
 }
 .scroll-top {
-    position: fixed !important;
-    right: 25px !important;
-    bottom: 25px !important;
-
-    width: 55px;
-    height: 55px;
-
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-
-    background: #2b6cb0;
-    color: white !important;
-    font-size: 32px;
+    font-size: 45px !important;
+    font-weight: bold;
+    margin-left: 15px;
+    color: #2b6cb0;
     text-decoration: none;
-    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.3s;
+}
 
-    z-index: 999999;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+.scroll-top:hover {
+    color: #ffd700;
+    transform: scale(1.3);
 }
