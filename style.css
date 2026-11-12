@@ -282,34 +282,23 @@ footer {
     outline-offset: 3px;
 }
 .scroll-top {
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
-    width: 50px;
-    height: 50px;
+    position: fixed !important;
+    right: 25px !important;
+    bottom: 25px !important;
 
-    display: flex;
+    width: 55px;
+    height: 55px;
+
+    display: flex !important;
     align-items: center;
     justify-content: center;
 
-    background-color: #2b6cb0;
-    color: white;
-    font-size: 30px;
+    background: #2b6cb0;
+    color: white !important;
+    font-size: 32px;
     text-decoration: none;
-
     border-radius: 50%;
-    cursor: pointer;
-    z-index: 9999;
 
-    transition: 0.3s;
-}
-
-.scroll-top:hover {
-    background-color: #ffd700;
-    color: #222;
-    transform: translateY(-5px);
-}
-
-html {
-    scroll-behavior: smooth;
+    z-index: 999999;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
